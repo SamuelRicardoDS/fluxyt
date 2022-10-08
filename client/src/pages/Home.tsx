@@ -1,7 +1,7 @@
 export const Home = () => {
     return (
-        <div>
-            <h1>Home</h1>
+        <div className="">
+            <h1 className="bg-slate-600">Home</h1>
         </div>
     )
 }
