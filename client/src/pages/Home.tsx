@@ -1,4 +1,6 @@
+import axios from 'axios';
 import React, { useState } from 'react';
+import { api } from '.././services/api'
 
 export const Home = () => {
     const [name, setName] = useState("");
@@ -9,6 +11,11 @@ export const Home = () => {
     const handleSubmit = (e: { preventDefault: () => void; }) => {
         e.preventDefault();
         console.log({ name, email, password });
+        axios.post('http://localhost:3333/users', { name: name, email: email, password: password }).then(() => {
+            console.log("correto");
+        }).catch(() => {
+            console.log("erro");
+        })
     }
 
     return (
