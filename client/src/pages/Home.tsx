@@ -2,6 +2,7 @@ import LandingPage  from '../assets/LandingPage.jpg'
 import { Footer } from '../components/Footer'
 
 export const Home = () => {
+
     const handleClick = () => {
         window.location.href = "/login"
     }

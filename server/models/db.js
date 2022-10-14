@@ -1,6 +1,6 @@
 const Sequelize = require('sequelize');
 
-const sequelize = new Sequelize("fluxyDB",  {
+const sequelize = new Sequelize("fluxyDB", "root", "Macacorosa?1", {
     host: "localhost",
     dialect: "mysql",
     define: {

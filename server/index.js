@@ -26,7 +26,7 @@ app.post("/users", async (req, res) => {
     .catch(() => {
       return res.status(400).json({
         erro: true,
-        mensagem: "Erro: Usuário não foi cadastrado com sucesso!",
+        mensagem: "deu alguma merda ai, verifica as colunas sla",
       });
     });
 });
