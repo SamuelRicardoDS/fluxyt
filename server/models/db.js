@@ -1,8 +1,11 @@
 const Sequelize = require('sequelize');
 
-const sequelize = new Sequelize("fluxyDB", "root", "Macacorosa?1", {
+const sequelize = new Sequelize("fluxyDB",  {
     host: "localhost",
-    dialect: "mysql"
+    dialect: "mysql",
+    define: {
+        timestamps: false
+    }
 });
 //estas mensagens são só para desenvolvimento e devem ser retiradas em fase de produção
 sequelize.authenticate().then(() => {
