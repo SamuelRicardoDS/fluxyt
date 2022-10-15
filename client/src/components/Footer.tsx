@@ -1,26 +1,24 @@
 import { useState } from 'react'
 import Modal from 'react-modal'
+import { GranolaModal } from './GranolaModal';
+
+Modal.setAppElement('#root')
 
 export const Footer = () => {
-
-    const [isGranolaModalOpen, setIsGranolaModalOpen] = useState(false)
+    const [isGranolaModalOpen, setIsGranolaModalOpen] = useState(false);
 
     const handleOpenGranolaModal = () => {
-        setIsGranolaModalOpen(true)
-    }
-
+      setIsGranolaModalOpen(true);
+    };
+  
     const handleCloseGranolaModal = () => {
-        setIsGranolaModalOpen(false)
-    }
+      setIsGranolaModalOpen(false);
+    };
 
     return (
-        <div className="flex flex-col items-center bg-slate-500 text-white p-1 absolute w-screen bottom-0">
+        <div className="flex flex-col items-center bg-slate-200 text-white p-1 absolute w-screen bottom-0">
             <button onClick={handleOpenGranolaModal}  className='text-center items-center'>developed by GraCompany</button>
-            <Modal 
-            isOpen={isGranolaModalOpen}
-            onRequestClose={handleCloseGranolaModal}>
-                <h1>Gra Company</h1>
-            </Modal>
+            <GranolaModal isOpen={isGranolaModalOpen} onRequestClose={handleCloseGranolaModal}/>
         </div>
     )
 }
