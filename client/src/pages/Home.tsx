@@ -5,7 +5,7 @@ import { useState } from 'react'
 export const Home = () => {
 
     const handleRegisterClick = () => {
-        window.location.href = "/cadastro"
+        window.location.href = "/register"
     }
 
     const handleLoginClick = () => {

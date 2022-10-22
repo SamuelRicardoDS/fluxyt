@@ -1,5 +1,6 @@
 import Modal from "react-modal";
 import { useState } from "react";
+import  qrCodePix  from "../assets/qrCodePix.jpg";
 
 interface GranolaModalProps {
   isOpen: boolean;
@@ -26,9 +27,7 @@ export const GranolaModal = ({ isOpen, onRequestClose }: GranolaModalProps) => {
         },
         content: {
           background: "white",
-          width: "45rem",
-          maxWidth: "calc(100vw - 2rem)",
-          maxHeight: "calc(100vh - 2rem)",
+          width: "43rem",
           overflowY: "auto",
           position: "relative",
           border: "1px solid #ccc",
@@ -48,9 +47,7 @@ export const GranolaModal = ({ isOpen, onRequestClose }: GranolaModalProps) => {
           para com as demandas universitárias.
         </p>
         <p>Curtiu o propósito? ajude a ideia a sobreviver com um pix</p>
-        <p className="text-5xl items-center text-center">
-          QR CODE <br /> AQUI
-        </p>
+        <img src={qrCodePix} alt="" className="w-1/4 h-1/4"/>
       </div>
     </Modal>
   );
