@@ -16,7 +16,7 @@ export const Footer = () => {
     };
 
     return (
-        <div className="flex flex-col items-center bg-slate-200 text-white p-1 absolute w-screen bottom-0">
+        <div className="flex flex-col items-center bg-[#111] text-white p-1 absolute w-screen bottom-0">
             <button onClick={handleOpenGranolaModal}  className='text-center items-center'>developed by GraCompany</button>
             <GranolaModal isOpen={isGranolaModalOpen} onRequestClose={handleCloseGranolaModal}/>
         </div>
