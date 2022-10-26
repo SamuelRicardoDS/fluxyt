@@ -21,10 +21,6 @@ export const Home = () => {
         <p className="text-xl">Mais um problema que resolvemos para você</p>
       </div>
       <HomeContent />
-      {/*  <div className=" absolute right-0">
-                <img src={LandingPage} />
-            </div> */}
-      <Footer />
     </div>
   );
 };

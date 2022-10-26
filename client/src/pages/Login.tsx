@@ -1,3 +1,4 @@
+import { Footer } from "../components/Footer";
 
 
 export const Login = () => {
@@ -18,6 +19,7 @@ export const Login = () => {
                 <button>Entrar</button>
             </form>
             <button onClick={() => handleBackClick()} className="bg-slate-500 text-white p-2 mt-2">Voltar</button>
+         
         </div>
     )
 }

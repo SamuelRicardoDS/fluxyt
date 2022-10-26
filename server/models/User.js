@@ -20,11 +20,8 @@ const User = database.define('users', {
         type: sequelize.STRING,
         allowNull: false
     },  
-
-
 })
 
 //segue abaixo função que verifica se há alteração na tabela e faz a alteração
 //User.sync({ alter: true });
-
 module.exports = User;

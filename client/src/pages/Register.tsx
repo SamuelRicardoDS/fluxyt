@@ -30,6 +30,7 @@ export const Register = () => {
                     <button className="bg-slate-500 text-white p-2 mt-2">Registrar</button>
             </form> 
             <button onClick={() => handleBack()} className="bg-slate-500 text-white p-2 mt-2">Voltar</button>
+            
         </div>
     )
 }
