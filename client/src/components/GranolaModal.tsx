@@ -26,11 +26,11 @@ export const GranolaModal = ({ isOpen, onRequestClose }: GranolaModalProps) => {
           justifyContent: "center",
         },
         content: {
-          background: "white",
+          background: "grey",
           width: "43rem",
           overflowY: "auto",
           position: "relative",
-          border: "1px solid #ccc",
+          border: "1px solid ",
           borderRadius: "0.45rem",
           padding: "2rem",
         },
