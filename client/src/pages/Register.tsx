@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useState } from 'react';
+import gregothinking from '../assets/gregothinking.jpg';
 
 export const Register = () => {
     const [name, setName] = useState("");
@@ -21,15 +22,20 @@ export const Register = () => {
     }
 
     return (
-        <div className="">
-            <form onSubmit={handleSubmit} className="flex flex-col w-1/4 items-center bg-slate-400 p-5 mt-3">
-                <h1>registro</h1>
-                    <input type="text" placeholder="nome" onChange={(e) => setName(e.target.value)} className="mt-2"/>
-                    <input type="email" placeholder="email" onChange ={(e) =>setEmail(e.target.value)} className="mt-2"/>
-                    <input type="password" placeholder="senha" onChange={(e) => setPassword(e.target.value)} className="mt-2"/>
-                    <button className="bg-slate-500 text-white p-2 mt-2">Registrar</button>
+        <div className="bg-black h-screen">
+            <form onSubmit={handleSubmit} className="flex flex-col w-1/4 items-center rounded-2xl  bg-stone-800 p-5">
+                <h1 className='text-white'>Preencha os dados</h1>
+                    <input type="text" placeholder="nome" onChange={(e) => setName(e.target.value)} className="mt-2 rounded-lg border"/>
+                    <input type="email" placeholder="email" onChange ={(e) =>setEmail(e.target.value)} className="mt-2 rounded-lg border"/>
+                    <input type="password" placeholder="senha" onChange={(e) => setPassword(e.target.value)} className="mt-2 rounded-lg border"/>
+                    <button className="bg-stone-900 text-white p-2 mt-2 rounded-2xl">Registrar</button>
             </form> 
-            <button onClick={() => handleBack()} className="bg-slate-500 text-white p-2 mt-2">Voltar</button>
+            <div className='items-center'>
+            <button onClick={() => handleBack()} className="bg-stone-500 rounded-2xl text-white p-2 mt-2">Voltar</button>
+            </div>
+            <div>
+                <img  className='right-0 bottom-0 absolute' src={gregothinking} alt="" />
+            </div>
             
         </div>
     )

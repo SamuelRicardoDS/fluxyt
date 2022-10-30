@@ -13,17 +13,17 @@ function App() {
 
   return (
     <div className="App">
-      <AuthContext.Provider value={{}}>
       <Router>
+      <AuthContext.Provider value={{}}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
           <Route path="/main" element={<Main />} />
         </Routes>
+      </AuthContext.Provider>
       </Router>
       <Footer />
-      </AuthContext.Provider>
     </div>
   )
 }
