@@ -22,9 +22,9 @@ export const Register = () => {
     }
 
     return (
-        <div className="bg-black h-screen">
+        <div className="flex flex-col justify-center items-center bg-black h-screen">
             <form onSubmit={handleSubmit} className="flex flex-col w-1/4 items-center rounded-2xl  bg-stone-800 p-5">
-                <h1 className='text-white'>Preencha os dados</h1>
+                <h1 className='text-white'>Wreencha os dados</h1>
                     <input type="text" placeholder="nome" onChange={(e) => setName(e.target.value)} className="mt-2 rounded-lg border"/>
                     <input type="email" placeholder="email" onChange ={(e) =>setEmail(e.target.value)} className="mt-2 rounded-lg border"/>
                     <input type="password" placeholder="senha" onChange={(e) => setPassword(e.target.value)} className="mt-2 rounded-lg border"/>
@@ -34,7 +34,7 @@ export const Register = () => {
             <button onClick={() => handleBack()} className="bg-stone-500 rounded-2xl text-white p-2 mt-2">Voltar</button>
             </div>
             <div>
-                <img  className='right-0 bottom-0 absolute' src={gregothinking} alt="" />
+                <img  className='bottom-0 left-0 absolute' src={gregothinking} alt="" />
             </div>
             
         </div>
