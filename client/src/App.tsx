@@ -11,6 +11,10 @@ import { Footer } from './components/Footer'
 
 function App() {
 
+  const login = (email: string, password: string) => {
+
+  }
+
   return (
     <div className="App">
       <Router>
