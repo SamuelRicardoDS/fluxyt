@@ -3,6 +3,9 @@ import { hash } from "bcrypt";
 const app = express();
 import cors from "cors";
 import { prisma } from "./services/database/prisma";
+require("dotenv").config();
+import jwt from "jsonwebtoken";
+import { loginRoute } from "./api/routes/loginRoute";
 
 app.use(cors());
 app.use(express.json());
@@ -23,7 +26,6 @@ app.post("/users", async (req, res) => {
     }
     }
   )
-
     return res.json({
       erro: false,
       mensagem: "Usuário cadastrado com sucesso!",
@@ -35,6 +37,8 @@ app.post("/users", async (req, res) => {
     });
   }
 });
+
+loginRoute(app);
 
 app.listen(3333, () => {
   console.log("Listening on port 3333");

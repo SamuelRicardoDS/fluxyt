@@ -24,7 +24,7 @@ export const Register = () => {
     return (
         <div className="flex flex-col justify-center items-center bg-black h-screen">
             <form onSubmit={handleSubmit} className="flex flex-col w-1/4 items-center rounded-2xl  bg-stone-800 p-5">
-                <h1 className='text-white'>Wreencha os dados</h1>
+                <h1 className='text-white'>Preencha os dados</h1>
                     <input type="text" placeholder="nome" onChange={(e) => setName(e.target.value)} className="mt-2 rounded-lg border"/>
                     <input type="email" placeholder="email" onChange ={(e) =>setEmail(e.target.value)} className="mt-2 rounded-lg border"/>
                     <input type="password" placeholder="senha" onChange={(e) => setPassword(e.target.value)} className="mt-2 rounded-lg border"/>
