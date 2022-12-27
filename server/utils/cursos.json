@@ -1,0 +1,31 @@
+[
+  {
+    "curso": "Engenharia de Software",
+    "semestres": "10",
+    "materias": {
+      "1": {
+        "obrigatorias": [
+          "calculo 1",
+          "introdução a engenharia",
+          "engenharia e ambiente",
+          "algoritmos e programação de computadores",
+          "desenho industrial assistido por computador"
+        ],
+        "optativas": []
+      }
+    }
+  },
+  {
+    "curso": "psicologia",
+    "semestres":"10",
+    "materias":{
+      "1":{
+        "obrigatorias":[
+          "psicologia",
+          "filosofia"
+        ],
+        "optativas":[]
+      }
+    }
+  }
+]
