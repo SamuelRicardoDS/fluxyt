@@ -16,7 +16,7 @@ export const RegisterSemester = () => {
                     <select name="" id="">
                         <option selected disabled={true}>selecione uma materia</option>
                         {
-                            Cursos.map((curso)=> (<option value={curso.materias[1].obrigatorias}>{curso.materias[1].obrigatorias}</option>))
+                            Cursos.map((curso) => curso.materias[1].obrigatorias.map((obrigatoria) => <option value={obrigatoria}>{obrigatoria}</option>))
                         }
                     </select>
                     <button onClick={(e) => handleclick(e)}>mais</button>
