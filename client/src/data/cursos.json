@@ -2,8 +2,8 @@
   {
     "curso": "Engenharia de Software",
     "semestres": "10",
-    "materias": {
-      "1": {
+    "materias": [
+       {
         "obrigatorias": [
           "Cálculo 1",
           "Introdução a Engenharia",
@@ -12,20 +12,39 @@
           "desenho industrial assistido por computador"
         ],
         "optativas": []
+      },
+      {
+        "obrigatorias": [
+          "Cálculo 2",
+          "Física Experimental 1",
+          "Física 1",
+          "Introdução a Álgebra Linear",
+          "Probabilidade e Estatística aplicada a Engenharia"
+        ],
+        "optativas": [
+          "Desenvolvimento de software"
+        ]
       }
-    }
+    ]
   },
   {
     "curso": "psicologia",
     "semestres":"10",
-    "materias":{
-      "1":{
+    "materias": [
+      {
+        "obrigatorias":[
+          "psicologia",
+          "filosofia"
+        ],
+        "optativas":[]
+      },
+      {
         "obrigatorias":[
           "psicologia",
           "filosofia"
         ],
         "optativas":[]
       }
-    }
+    ]
   }
 ]
