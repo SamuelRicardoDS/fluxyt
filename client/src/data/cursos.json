@@ -24,6 +24,37 @@
         "optativas": [
           "Desenvolvimento de software"
         ]
+      },
+      {
+        "obrigatorias": [
+          "Métodos Numéricos para Engenharia",
+          "Engenharia Econômica",
+          "Humanidades e Cidadania",
+          "Teoria de Eletrônica Digital 1",
+          "Prática de Eletrônica Digital 1",
+          "Orientação a Objetos",
+          "Matemática Discreta 1"
+        ]
+      },
+      {
+        "obrigatorias": [
+          "Gestão da Produção e Qualidade",
+          "Métodos de Desenvolvimento de Software",
+          "Estrutura de Dados 1",
+          "Fundamentos de Arquiteturas de Computadores",
+          "Matemática Discreta 2",
+          "Projeto Integrador de Engenharia 1"
+        ]
+      },
+      {
+        "obrigatorias": [
+          "Interação Humano Computador",
+          "Requisitos de Software",
+          "Sistemas de Banco de Dados 1",
+          "Fundamentos de Sistemas Operacionais",
+          "Compiladores 1",
+          "Estrutura de Dados 2"
+        ]
       }
     ]
   },
