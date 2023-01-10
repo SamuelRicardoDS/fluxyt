@@ -39,10 +39,8 @@ export const RegisterSemester = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            {materias.map((selecionada) => <th>{selecionada}</th>)}
-                            <th>SR</th>
-                        </tr>
+                            {materias.map((selecionada) => <tr><th>{selecionada}</th><th>SR</th></tr>)}
+                            
                     </tbody>
                 </table>
                 <button onClick={(e) => handleRegister(e)}>Cadastrar Semestre</button>
