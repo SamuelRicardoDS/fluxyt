@@ -12,8 +12,6 @@ app.use(express.json());
 app.post("/users", async (req, res) => {
   const { name, email, password } = req.body;
   console.log(name, email, password);
-
-
   const hashedPassword = await hash(password, 10);
 
   try {

@@ -7,7 +7,7 @@ export const Main = () => {
       <h1>Engenharia de software unb</h1>
         <RegisterSemester />
       <div className="flex flex-row justify-between p-5">
-        <Semester data={{period: 1, materias: ["Calculo", "ial"],ira:2}}/>
+        <Semester data={{period: 1, materias: ["Calculo", "ial"]}}/>
       </div>
     </div>  
   );
