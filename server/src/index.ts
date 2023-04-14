@@ -5,9 +5,12 @@ import cors from "cors";
 const app = express();
 require("dotenv").config();
 import { prisma } from "./database/prisma";
+import { router } from "./shared/infra/http/routes";
 
 app.use(cors());
 app.use(express.json());
+app.use(router);
+
 
 app.post("/users", async (req, res) => {
   const { name, email, password } = req.body;
